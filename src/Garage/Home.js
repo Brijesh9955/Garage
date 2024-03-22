@@ -30,7 +30,7 @@ const Home = () => {
   }, [])
   
   const getService = () => {
-    axios.get('https://garage-backend-maxp.onrender.com/service/find')
+    axios.get('https://garage-backend-ld7j.onrender.com/service/find')
     .then((res) => {
       console.log("Demo");
         console.log(res.data.data);
@@ -132,7 +132,7 @@ const Home = () => {
                     </div>
 
                     <div class="service-card_img">
-                      <img src={"https://garage-backend-maxp.onrender.com/images/" + el.image} alt="" />
+                      <img src={"https://garage-backend-ld7j.onrender.com/images/" + el.image} alt="" />
                     </div>
 
                   </div>
@@ -156,7 +156,7 @@ const Home = () => {
                     return <div className='col-4'>
 
                       <Card style={{ width: '363px' }} key={index} onClick={card} className='p-0 box pos-rel '>
-                        <div className="img-box border-bottom"><Card.Img variant="top" className='p-0' src={'https://garage-backend-maxp.onrender.com/images/' + el.image} /></div>
+                        <div className="img-box border-bottom"><Card.Img variant="top" className='p-0' src={'https://garage-backend-ld7j.onrender.com/images/' + el.image} /></div>
                         <Card.Body>
                           <div className='icon-color'><Card.Title className='pt-1 mb-2 fw-bold  text-uppercase' >{el.serviceName}</Card.Title></div>
                           <p className='pt-1  mb-2 fs-18 text-color'>{el.decription}</p>
@@ -270,7 +270,7 @@ export default Home
 
                   <div className=" text-dark pos-rel">
                     <div className="card-icon rounded-circle"><RiServiceFill className='icon-color fs-2' /></div>
-                    <div className="img-box"><img className='w-100' src={'https://garage-backend-maxp.onrender.com/images/' + el.image} alt="" /></div>
+                    <div className="img-box"><img className='w-100' src={'https://garage-backend-ld7j.onrender.com/images/' + el.image} alt="" /></div>
                     <div className='p-3'>
                       <h4 className='pt-1 fs-6 mb-0 fw-bold icon-color' >{el.serviceName}</h4>
                       <p className='pt-1  mb-0 fs-18'>{el.decription}</p>

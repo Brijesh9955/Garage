@@ -9,7 +9,7 @@ const Technician = () => {
   const history = useHistory()
 
   const getAppointment = () => {
-    axios.get('https://garage-backend-maxp.onrender.com/appointment/find')
+    axios.get('https://garage-backend-ld7j.onrender.com/appointment/find')
       .then((res) => {
         console.log(res.data.data);
         setAppoinment(res.data.data)
